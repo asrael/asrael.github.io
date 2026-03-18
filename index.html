@@ -36,9 +36,9 @@ a{color:inherit;text-decoration:none}
     .nav-rss{border:1px solid var(--orange);color:var(--orange)!important;padding:.35em .8em;transition:background .18s,color .18s!important}
     .nav-rss:hover{background:var(--orange)!important;color:var(--bg)!important}
     .site-footer{padding:1.75rem 0;display:flex;align-items:center;justify-content:space-between;animation:fadeUp .65s .38s ease both}
-    .footer-copy{font-family:var(--mono);font-size:.88rem;color:var(--bg4)}
+    .footer-copy{font-family:var(--mono);font-size:.88rem;color:var(--fg-dim)}
     .footer-links{display:flex;gap:1.5rem}
-    .footer-links a{font-family:var(--mono);font-size:.88rem;color:var(--bg4);transition:color .18s}
+    .footer-links a{font-family:var(--mono);font-size:.88rem;color:var(--fg-dim);transition:color .18s}
     .footer-links a:hover{color:var(--yellow)}
     .tags{display:flex;gap:.35rem;flex-wrap:wrap}
     .tag{font-family:var(--mono);font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.18em .55em;border:1px solid}
@@ -57,7 +57,7 @@ a{color:inherit;text-decoration:none}
 .hero-body{max-width:52ch;font-size:1rem;color:var(--fg-dim);margin-bottom:2.25rem}
     .hero-cta{display:inline-block;font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:var(--red);color:var(--bg);padding:.6em 1.5em;transition:background .18s}
     .hero-cta:hover{background:var(--orange)}
-    .hero-date{font-family:var(--mono);font-size:.65rem;color:var(--bg4);margin-left:1.25rem}
+    .hero-date{font-family:var(--mono);font-size:.65rem;color:var(--fg-dim);margin-left:1.25rem}
     .main-grid{display:grid;grid-template-columns:1fr 276px;border-bottom:1px solid var(--border)}
     .post-list{border-right:1px solid var(--border);padding:2.75rem 2.75rem 2.75rem 0;animation:fadeUp .65s .16s ease both}
     .section-label{font-family:var(--mono);font-size:.75rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--fg-dim);margin-bottom:1.75rem;display:flex;align-items:center;gap:.75rem}
@@ -66,11 +66,11 @@ a{color:inherit;text-decoration:none}
     .post-card:last-child{border-bottom:none}
     .post-card:hover .post-num{color:var(--yellow)}
     .post-card:hover .post-title{color:var(--yellow)}
-    .post-num{font-family:var(--mono);font-size:.75rem;color:var(--fg-faint);padding-top:.3rem;transition:color .18s}
+    .post-num{font-family:var(--mono);font-size:.75rem;color:var(--gray);padding-top:.3rem;transition:color .18s}
     .post-inner{display:flex;flex-direction:column;gap:.45rem}
     .post-title{font-family:var(--mono);font-size:1.15rem;font-weight:600;color:var(--fg);transition:color .18s}
     .post-excerpt{font-size:.95rem;color:var(--fg-dim);line-height:1.6}
-    .post-meta{font-family:var(--mono);font-size:.75rem;color:var(--bg4);display:flex;gap:1rem;margin-top:.1rem}
+    .post-meta{font-family:var(--mono);font-size:.75rem;color:var(--fg-dim);display:flex;gap:1rem;margin-top:.1rem}
     .sidebar{padding:2.75rem 0 2.75rem 2.25rem;display:flex;flex-direction:column;gap:2.25rem;animation:fadeUp .65s .24s ease both}
     .sb-block{display:flex;flex-direction:column;gap:.9rem}
     .sb-label{font-family:var(--mono);font-size:.6rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--fg-dim)}
@@ -79,7 +79,7 @@ a{color:inherit;text-decoration:none}
     .topic-row:last-child{border-bottom:none}
     .topic-name{font-family:var(--mono);font-size:.7rem;color:var(--fg-dim);transition:color .18s}
     .topic-row:hover .topic-name{color:var(--yellow)}
-    .topic-count{font-family:var(--mono);font-size:.62rem;color:var(--bg4)}
+    .topic-count{font-family:var(--mono);font-size:.62rem;color:var(--fg-dim)}
     @media(max-width:860px){.main-grid{grid-template-columns:1fr}.post-list{border-right:none;padding-right:0}.sidebar{padding-left:0;border-top:1px solid var(--border)}}
     @media(max-width:540px){.site{padding:0 1.1rem}.hide-sm{display:none}}
   </style>
@@ -94,6 +94,7 @@ a{color:inherit;text-decoration:none}
     <nav><a href="#archive" class="hide-sm">Archive</a><a href="feed.xml" class="nav-rss">RSS</a></nav>
   </header>
 
+<main>
 <section class="hero">
   <div class="hero-eye">latest post</div>
   <h1 class="hero-title">Systems Check</h1>
@@ -105,7 +106,7 @@ a{color:inherit;text-decoration:none}
 </section>
 
   <div class="main-grid">
-    <main class="post-list">
+    <div class="post-list">
       <div id="archive" class="section-label">Home</div>
       
 <article class="post-card">
@@ -117,7 +118,7 @@ a{color:inherit;text-decoration:none}
     <div class="post-meta"><span>2026-03-14</span><span style="color:var(--orange)">test</span></div>
   </div>
 </article>
-    </main>
+    </div>
     <aside class="sidebar">
 <div class="sb-block">
         <div class="sb-label">Topics</div>
@@ -125,6 +126,7 @@ a{color:inherit;text-decoration:none}
       </div>
     </aside>
   </div>
+</main>
   <footer class="site-footer">
     <div class="footer-copy">© 2026 asrael.io</div>
     <div class="footer-links">
