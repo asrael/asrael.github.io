@@ -4,7 +4,7 @@ import { join } from 'path'
 
 const PUBLIC = 'public'
 const THEME = 'gruvbox-dark-medium'
-const RE = /<pre><code class="language-(\w+)">([\s\S]*?)<\/code><\/pre>/g
+const RE = /<pre><code class=["']?language-(\w+)["']?>([\s\S]*?)<\/code><\/pre>/g
 
 function htmlUnescape(s) {
   return s
