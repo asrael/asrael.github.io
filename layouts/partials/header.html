@@ -1,0 +1,11 @@
+<header class="site-header">
+  <a href="/" style="text-decoration:none;color:inherit">
+    <div class="logo-mark">asrael<span class="slash">/</span><span class="log">io</span></div>
+    <div class="logo-sub">bits, pixels, and other small things</div>
+  </a>
+  <nav>
+    {{ if not .IsHome }}<a href="/" class="nav-back">Home</a>{{ end }}
+    {{ if .IsHome }}<a href="#archive" class="hide-sm">Archive</a>{{ end }}
+    <a href="/feed.xml" class="{{ if .IsHome }}nav-rss{{ end }}">RSS</a>
+  </nav>
+</header>

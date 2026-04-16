@@ -1,0 +1,22 @@
+baseURL = "https://asrael.io/"
+languageCode = "en"
+title = "asrael/io"
+disableHugoGeneratorInject = true
+
+[params]
+  description = "bits, pixels, and other small things — a blog about systems, graphics, and low-level programming."
+
+[markup]
+  [markup.highlight]
+    codeFences = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediaType = "application/rss+xml"
+    baseName = "feed"

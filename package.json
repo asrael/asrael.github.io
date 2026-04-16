@@ -1,0 +1,27 @@
+{
+  "name": "asrael.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/asrael/asrael.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/asrael/asrael.github.io/issues"
+  },
+  "homepage": "https://github.com/asrael/asrael.github.io#readme",
+  "dependencies": {
+    "shiki": "^4.0.2"
+  }
+}
