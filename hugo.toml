@@ -4,7 +4,7 @@ title = "asrael/io"
 disableHugoGeneratorInject = true
 
 [params]
-  description = "bits, pixels, and other small things — a blog about systems, graphics, and low-level programming."
+  description = "a blog about systems, graphics, and low-level programming."
 
 [markup]
   [markup.highlight]
