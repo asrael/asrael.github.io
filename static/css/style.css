@@ -58,8 +58,8 @@ p { margin: 0; }
 }
 
 .logo-mark { font-family: var(--mono); font-size: 1.55rem; font-weight: 700; letter-spacing: -.02em; }
-.logo-mark .slash { color: var(--yellow); }
-.logo-mark .log { color: var(--red); }
+.logo-mark .dot { color: var(--red); }
+.logo-mark .tld { color: var(--green); }
 .logo-sub {
   font-family: var(--mono);
   font-size: .75rem;
